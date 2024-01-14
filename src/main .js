@@ -12,6 +12,7 @@ const getJokes = () => {
         jokeArea.innerHTML = `${data.value}`;
         
       } else {
+        jokeArea.innerHTML = " Something Went Wrong !! ";
       }
     }
   };
