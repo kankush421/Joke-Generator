@@ -9,7 +9,6 @@ const getJokes = () => {
       if (this.status === 200) {
         
         const data = JSON.parse(this.response);
-        jokeArea.innerHTML = '';
         jokeArea.innerHTML = `${data.value}`;
         
       } else {
@@ -19,3 +18,4 @@ const getJokes = () => {
   xhr.send();
 };
 jokeButton.addEventListener("click", getJokes);
+document.addEventListener("DOMContentLoaded",getJokes);
